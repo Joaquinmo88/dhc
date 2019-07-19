@@ -1,0 +1,36 @@
+---
+layout: detail_caso_exito
+permalink: /casos_exito/:title.html
+categories: casos_exito
+categorie: "storie"
+
+title:  "Molino de Flores"
+date:   2019-06-07 23:36:38 -0500
+image:  molino-de-las-flores.jpg
+description: El Parque Nacional Molino de Flores, ubicado en el municipio de Texcoco, fue escenario de grandes hechos históricos que abarcan desde los tiempos de Nezahualcóyotl...
+---
+
+<div class="container-fluid mt-3 pb-3">
+    <div class="container bg-white">
+        <div class="p-5 ">
+            <h1 class="cnt-title">Molino de Flores</h1>
+            <p>
+                Es el sitio perfecto para pasar un agradable fin de semana en familia o entre amigos, ya que se puede disfrutar de la naturaleza, orar en algunas de sus dos iglesias y al mismo tiempo conocer las historias que guarda el lugar.
+            </p>
+            <p>
+                El Molino de Flores fue una fructífera hacienda durante la época colonia, de la cual sólo quedan parte de sus deteriorados edificios como el tinacal, la tienda de raya, el horno de pan, macheros, portero, cochera, molino, casa principal, casa de visitas, la iglesia de San Joaquín y la capilla del Señor de la Presa, entre otros que pueden ser visitados.
+            </p>
+            <p>
+                Además de conocer el antiguo casco de la hacienda, los visitantes pueden disfrutar de la gastronomía en la zona comercial, visitar la cabaña chueca, montar a caballo y dar un paseo en cuatrimotos. También podrán realizar un recorrido por el vivero federal, el jardín botánico, las zonas de recuperación o permanecer en los espacios de campamento.
+            </p>
+        </div>
+        <div id="gallery" class="container-gallery">
+            {% for i in (1..33) %}
+            <img alt="Image 1 Title" src="/assets/images/gallerys/molino/thumbnail/{{i}}.jpg"
+                data-image="/assets/images/gallerys/molino/{{i}}.jpg" data-description="Image 1 Description">
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+

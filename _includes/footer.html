@@ -1,0 +1,44 @@
+<footer class="fixed">
+    <div class="upper-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="#"> <img src="../assets/images/logo-text.png" style="max-width: 120px" alt="DHC"> </a>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <h5>Casos de éxito</h5>
+                    <ul>
+                        {% for storie in site.posts limit: 3%}
+                        {% if storie.categorie == "storie" %}
+                        <li><a href="{{ storie.url }}">{{ storie.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Blog</h5>
+                    <ul>
+                        {% for storie in site.posts limit: 3 %}
+                        {% if storie.categorie == "blog" %}
+                        <li><a href="{{ storie.url }}">{{ storie.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <!-- <a href="#" class="twitter"><i class="fab fa-facebook-f"></i></a> -->
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="google"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer">
+        <p>© 2019 Copyright - DHC </p>
+    </div>
+</footer>

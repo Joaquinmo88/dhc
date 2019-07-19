@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/libs/unite-gallery.css">
+    <link rel="stylesheet" href="/assets/libs/unitegallery/themes/default/ug-theme-default.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+        .banner {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 550px;
+            position: relative;
+        }
+    </style>
+
+
+<body>
+
+    <!-- {%- include preloader.html -%} -->
+    <div class="bg-light">
+        {%- include preloader.html -%}
+        {%- include topbar.html -%}
+
+        <header>
+            <div style="background-image: url(/assets/images/carousel/mercedario-templo.jpg);" class="banner">
+                <div class="cover">
+                    {%- include nav.html -%}
+                    <div class="wrapper-content-cover">
+                        <div class="content-info">
+                            <h5>{{page.title}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {{ content }}
+    </div>
+    {%- include footer.html -%}
+
+</body>
+
+
+<script src="/assets/js/jquery/jquery.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/unitegallery.min.js"></script>
+<script type='text/javascript' src='/assets/libs/unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+<script src="/assets/js/main.js"></script>
+
+</html>

@@ -1,0 +1,59 @@
+.tt_button {
+  -webkit-transition: 0.3s !important;
+  -moz-transition: 0.3s !important;
+  -ms-transition: 0.3s !important;
+  -o-transition: 0.3s !important;
+  transition: 0.3s !important;
+  text-align: center;
+  border: 0;
+  min-width: 170px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #fff;
+  padding: 0;
+  padding: 17px 25px;
+  margin: auto;
+  display: table;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  line-height: 1;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  text-decoration: none !important;
+
+
+  &.tt_primary_h_outline_button {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #2b83ee;
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+    }
+  }
+
+  &.tt_primary_outline_button {
+    background-color: #2b83ee;
+    border: 2px solid #2b83ee;
+    color: #ffffff;
+    &:hover {
+      background-color: transparent;
+      color: #2b83ee;
+    }
+  }
+
+  &.tt_secondary_button {
+    color: #2b83ee;
+    border: 2px solid #2b83ee;
+    &:hover {
+      color: #ffffff;
+      background-color: #2b83ee;
+    }
+  }
+
+  .iconita {
+    margin-left: 0.5rem;
+  }
+}

@@ -1,0 +1,245 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+
+
+<div style="max-width: 1199px; margin: 0 auto;">
+	<section class="wrapper-owl-carousel p-0">
+		<div id="owl-demo" class="owl-carousel">
+			<!-- {% for storie in site.posts limit: 3 %}
+			{% if storie.categorie == "storie" %}
+			<div class="item">
+				<div class="owl-item-img">
+					<img class="lazyOwl" src="/assets/images/carousel/casos_exito/{{storie.image}}" height="250"
+						alt="{{storie.title}}">
+				</div>
+				<div class="owl-item-description">
+					<h4>{{storie.title}}</h4>
+					<p>
+						{{storie.description}}
+					</p>
+					<div class="mt-4">
+						<a href="{{storie.url}}" title="" class="tt_button tt_secondary_button">
+							LEER MAS<span class="fa fa-plus iconita"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %} -->
+
+			{% for item in site.data.gallerys limit: 3 %}
+			<div class="item">
+				<div class="owl-item-img">
+					<img class="lazyOwl" src="/assets/images/casos_de_exito/{{item.image}}" height="250"
+						alt="{{item.title}}">
+				</div>
+				<div class="owl-item-description">
+					<h4>{{item.title}}</h4>
+					<p>
+						{{item.description}}
+					</p>
+					<div class="mt-4">
+						<a href="{{item.url}}" title="" class="tt_button tt_secondary_button">
+							LEER MAS<span class="fa fa-plus iconita"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+</div>
+
+
+<section>
+	<div class="container ">
+		<div class="row">
+			<div class="col-6 col-md-6 col-lg-3">
+				<div class="d-flex">
+					<div class="d-flex justify-content-center align-items-center p-3">
+						<i class="fal fa-landmark fa-3x"></i>
+					</div>
+					<div class="mr-3">
+						<div class="increment-number">1246</div>
+						<h6 class="text-incvrement-number">SUNNY DESTINATIONS</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-6 col-lg-3">
+				<div class="d-flex">
+					<div class="d-flex justify-content-center align-items-center p-3">
+						<i class="fal fa-vihara fa-3x"></i>
+					</div>
+					<div class="mr-3">
+						<div class="increment-number">1246</div>
+						<h6 class="text-incvrement-number">SUNNY DESTINATIONS</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-6 col-lg-3">
+				<div class="d-flex">
+					<div class="d-flex justify-content-center align-items-center p-3">
+						<i class="fal fa-landmark fa-3x"></i>
+					</div>
+					<div class="mr-3">
+						<div class="increment-number">1246</div>
+						<h6 class="text-incvrement-number">SUNNY DESTINATIONS</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-6 col-lg-3">
+				<div class="d-flex">
+					<div class="d-flex justify-content-center align-items-center p-3">
+						<i class="fal fa-vihara fa-3x"></i>
+					</div>
+					<div class="mr-3">
+						<div class="increment-number">1246</div>
+						<h6 class="text-incvrement-number">SUNNY DESTINATIONS</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-white">
+	<div class="container">
+		<div class="row">
+			{% for post in site.posts %}
+			{% if post.categorie == "blog" %}
+			<div class="col-6 col-md-6 col-lg-4 mb-4">
+				<div class="last-dhc-projects">
+					<div class="position-relative">
+						<img src="/assets/images/carousel/casos_exito/{{post.image}}" class="img-fluid" />
+						<div class="calendar-day">
+							<span>{{post.day}}</span>
+							<span>{{post.month}}</span>
+						</div>
+					</div>
+					<div class="blog-description p-2">
+						<h2>
+							<span class="clearfix">{{post.title}}</span>
+							<span class="small text-secondary">
+								<!-- <i class="far fa-user mr-2"></i> -->
+								<small class="text-uppercase">Juan Peréz G.</small>
+							</span>
+						</h2>
+						<p>{{ post.description }}</p>
+					</div>
+					<div class="footer">
+						<a href="{{post.url}}">ver más<i class="far fa-arrow-right ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<section id="slide-1" class="p-0">
+	<div style="background-image: url(/assets/images/parallax8x.jpg)" data-center="background-position: 50% 0px;"
+		data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+		<div class="container">
+			<div class="parallax-container" data-center="top: 200px; opacity: 1" data-top="top: 1200px;"
+				data-anchor-target="#slide-1 h2">
+				<div class="h-100 justify-content-center align-items-center">
+					<div class="wrapper-parallax h-100">
+						<div class="parallax-info">
+							<h2>Discover cheap travel deals & discounted trips</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquid quasi!
+								Asperiores
+								molestias amet nobis quos doloribus possimus maxime quibusdam, atque laborum corporis
+								sit a
+								deserunt earum, aliquid exercitationem quam?
+							</p>
+							<div class="mt-5 text-center">
+								<a href="#" class="tt_button tt_primary_outline_button">
+									LEER MAS<span class="fa fa-plus iconita"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="bg-white">
+	<div class="container">
+		<div class="wrapper-card-profile">
+			<div class="card-profile">
+				<div class="card-profile-message">
+					<h5>Thank you!</h5>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae praesentium illo dicta
+						iure
+						quasi, quibusdam deleniti voluptatibus, et cumque quo doloremque enim quos recusandae dolorum
+						quia!
+						Expedita, iusto laborum.
+					</p>
+				</div>
+				<div class="card-profile-info">
+					<img width="100" height="100"
+						src="http://keydesign-themes.com/etalon/travel-agency/wp-content/uploads/sites/11/2017/10/testimonial-pricing-2.png"
+						class="rounded-circle" alt="">
+					<h4>Raymond G.</h4>
+					<p>Arlington, Washington</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-white p-0">
+
+	<div class="container position-relative">
+		<div class="container-target-map">
+			<h4>COMO ENCONTRARNOS</h4>
+			<address>
+				<span class="business-address-row">
+					<i class="fal fa-map-marker-alt"></i>
+					<span class="address-overflow">49 Grand Street, Los Angeles</span>
+				</span>
+				<span class="business-phone-row">
+					<i class="fal fa-phone"></i>
+					<span class="address-overflow">(222) 400-630</span>
+				</span>
+				<span class="business-email-row">
+					<i class="fal fa-envelope"></i>
+					<a href="mailto:contact@etalon-theme.com">contact@etalon-theme.com</a>
+				</span>
+			</address>
+			<div class="business-info-schedule">
+				<h4>Opening hours</h4>
+				<div class="business-info-day">
+					<span class="business-info-day-name">Monday-Friday</span>
+					<span class="business-info-day-hours">10:00 - 18:00</span>
+				</div>
+				<div class="business-info-day">
+					<span class="business-info-day-name">Saturday</span>
+					<span class="business-info-day-hours">10:00 - 14:00</span>
+				</div>
+				<div class="business-info-day">
+					<span class="business-info-day-name">Sunday</span>
+					<span class="business-info-day-hours">Closed</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="map" style="height: 500px" class="w-100">
+	</div>
+
+</section>
