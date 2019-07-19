@@ -7,44 +7,31 @@ layout: section
 ---
 
 <section class="bg-white">
-
     <div class="conteiner-fluid">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <img src="/assets/images/casos_de_exito/success.svg" class="c-success"
-                                alt="DHC Casos de éxito">
-                        </div>
-                        <div class="service-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque, eaque quia cum optio
-                            incidunt in voluptas amet hic, commodi repudiandae eius consequatur? Necessitatibus cumque
-                            perspiciatis iusto numquam. Repellendus, unde?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque, eaque quia cum optio
-                            incidunt in voluptas amet hic, commodi repudiandae eius consequatur? Necessitatibus cumque
-                            perspiciatis iusto numquam. Repellendus, unde?
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row" id="owl-demo">
-                {% for item in site.data.gallerys%}
+            <div class="row">
+                {% for post in site.posts%}
                 <div class="col-md-4 p-3">
-
-                    <div class="item border rounded">
-                        <div class="owl-item-img">
-                            <img src="/assets/images/casos_de_exito/{{item.image}}" class="img-fluid rounded"
-                                alt="{{item.title}}">
+                    <div class="last-dhc-projects">
+                        <div class="position-relative">
+                            <img src="/assets/images/casos_de_exito/{{post.image}}" class="img-fluid" />
+                            <!-- <div class="calendar-day">
+                                <span>{{post.day}}</span>
+                                <span>{{post.month}}</span>
+                            </div> -->
                         </div>
-                        <div class="owl-item-description p-3">
-                            <h4>{{ item.title }}</h4>
-                            <p>{{ item.description }}</p>
+                        <div class="blog-description p-2">
+                            <h2>
+                                <span class="clearfix">{{post.title}}</span>
+                                <span class="small text-secondary">
+                                    <!-- <i class="far fa-user mr-2"></i> -->
+                                    <small class="text-uppercase">Juan Peréz G.</small>
+                                </span>
+                            </h2>
+                            <p>{{ post.description }}</p>
                         </div>
-                        <div class="mb-4">
-                            <a href="{{ item.url }}" title="{{item.title}}" class="tt_button tt_secondary_button">
-                                LEER MAS<span class="fa fa-plus iconita"></span>
-                            </a>
+                        <div class="footer">
+                            <a href="{{post.url}}">Galería<i class="far fa-arrow-right ml-2"></i></a>
                         </div>
                     </div>
 
