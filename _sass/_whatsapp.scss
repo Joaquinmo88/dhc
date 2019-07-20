@@ -9,7 +9,7 @@
 
 .whats-btn-open {
   color: #ffffff;
-  background-color: #25D366;
+  background-color: #25d366;
   padding: 8px 15px;
   font-size: 14px;
   border-radius: 20px;
@@ -119,7 +119,7 @@
     overflow: hidden;
 
     .user-info {
-      background-image: linear-gradient(180deg, #25D366 0%, #179045 100%);
+      background-image: linear-gradient(180deg, #25d366 0%, #179045 100%);
       margin-top: 0px;
       margin-bottom: 10px;
       padding-top: 70px;
@@ -128,8 +128,10 @@
 
       .user-name {
         display: block;
-        font: normal 16px;
+        // font: normal 16px;
         //@include font($normal, 16px);
+        font-size: 20px;
+        padding: 1rem 0;
         color: #fff;
         letter-spacing: 0.69px;
         margin-bottom: 3px;

@@ -9,7 +9,7 @@ function UGStripPanel() {
 	var g_objButtonNext, g_objButtonPrev;
 
 	this.events = {
-		FINISH_MOVE : "gridpanel_move_finish", // called after close or open panel (slide finish).
+		FINISH_MOVE : "gridpanel_move_finish", // called after close or open panel ( finish).
 		OPEN_PANEL : "open_panel", 			   // called before opening the panel.
 		CLOSE_PANEL : "close_panel" 		   // called before closing the panel.
 	};
@@ -639,7 +639,7 @@ function UGStripPanel() {
 	
 	
 	/**
-	 * close the panel (slide in)
+	 * close the panel ( in)
 	 */
 	this.closePanel = function(noAnimation) {
 		g_panelBase.closePanel(noAnimation);		

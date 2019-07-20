@@ -1,5 +1,5 @@
 ---
-title: Contacto 
+title: Contacto
 
 permalink: /contacto/
 breadcrumb: Contacto
@@ -11,21 +11,27 @@ layout: section
     <div class="container position-relative">
         <div class="container-target-map">
             <div class="mt-3 mb-5">
-                <form>
+                <form id="contactForm">
                     <div class="form-group ">
-                        <input type="text" class="form-control form-control-lg" placeholder="Nombre">
+                        <input type="text" class="form-control form-control-lg" placeholder="Nombre" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" placeholder="Correo">
+                        <input type="email" class="form-control form-control-lg" placeholder="Correo" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control form-control-lg" placeholder="Teléfono">
+                        <input type="text" class="form-control form-control-lg" placeholder="Teléfono" required>
                     </div>
                     <div class="form-group">
-                        <Textarea class="form-control form-control-lg" placeholder="Comentario"></Textarea>
+                        <Textarea class="form-control form-control-lg" placeholder="Comentario" required></Textarea>
                     </div>
                     <div class="form-group ">
-                        <button class="btn btn-light btn-block">Enviar</button>
+                        <button type="submit" class="btn btn-info btn-block">Enviar</button>
+                    </div>
+                    <div class="alert alert-success" style="display: none" id="response-message">
+                        <div class="d-flex align-items-center">
+                            <span ><i class="far fa-check-circle fa-2x"></i></span>
+                            <span class="pl-2">Se envió correctamente su mensaje.</span>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -33,7 +39,7 @@ layout: section
             <address>
                 <span class="business-address-row">
                     <i class="fal fa-map-marker-alt"></i>
-                    <span class="address-overflow">49 Grand Street, Los Angeles</span>
+                    <span class="address-overflow">Barrio de chimalpa, Papalotla Estado de México 56050</span>
                 </span>
                 <span class="business-phone-row">
                     <i class="fal fa-phone"></i>
@@ -45,17 +51,17 @@ layout: section
                 </span>
             </address>
             <div class="business-info-schedule">
-                <h4>Opening hours</h4>
+                <h4>Horario</h4>
                 <div class="business-info-day">
-                    <span class="business-info-day-name">Monday-Friday</span>
+                    <span class="business-info-day-name">Lunes-Viernes</span>
                     <span class="business-info-day-hours">10:00 - 18:00</span>
                 </div>
                 <div class="business-info-day">
-                    <span class="business-info-day-name">Saturday</span>
+                    <span class="business-info-day-name">Sabados</span>
                     <span class="business-info-day-hours">10:00 - 14:00</span>
                 </div>
                 <div class="business-info-day">
-                    <span class="business-info-day-name">Sunday</span>
+                    <span class="business-info-day-name">Domingos</span>
                     <span class="business-info-day-hours">Closed</span>
                 </div>
             </div>

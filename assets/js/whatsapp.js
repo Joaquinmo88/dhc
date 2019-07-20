@@ -53,10 +53,10 @@ jQuery(document).ready(function ()
         var text = jQuery('.whats-input-text').val();
         if (isMobile.any())
         {
-            window.open('https://api.whatsapp.com/send?phone=' + '+525957595964' + '&text=' + text);
+            window.open('https://api.whatsapp.com/send?phone=' + '+525951019208' + '&text=' + text);
         } else
         {
-            window.open('https://web.whatsapp.com/send?phone=' + '+525957595964' + '&text=' + text);
+            window.open('https://web.whatsapp.com/send?phone=' + '+525951019208' + '&text=' + text);
         }
     });
 });

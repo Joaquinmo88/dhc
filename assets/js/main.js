@@ -27,22 +27,6 @@
 
     $(document).ready(function () {
 
-        // $('body').scrollspy({
-        //     offset: 46,
-        //     target: '.navbar-fixed-top'
-        // });
-
-        if ($("#owl-demo").length > 0) {
-            $("#owl-demo").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 3,
-                navigation: true,
-                itemsDesktop: [1000, 3], //5 items between 1000px and 901px
-                itemsDesktopSmall: [900, 2], // betweem 900px and 601px
-                itemsTablet: [600, 1], //2 items between 600 and 0
-                // animateOut: 'fadeOut',
-            });
-        }
 
         if ($("#gallery").length > 0) {
             $("#gallery").unitegallery();
@@ -55,20 +39,29 @@
             });
         }
 
-        if ($('#slide-1').length > 0) {
-            var s = skrollr.init({
-                forceHeight: false
-            });
-
-
-            // Refresh Skrollr after resizing our sections
-            s.refresh($('#slide-1'));
-        }
-
         if ($("#map").length > 0) {
             initMap();
         }
+        
+        if ($('#contactForm').length > 0) {
+            $('#contactForm').on('submit', function(e){
+                e.preventDefault();
+                
+                $('button').prop('disabled', true).html(`
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                <span class="small">espere un momemnto</span>`);
 
+                $("#response-message").fadeIn('fast', function(){
+                   
+                    
+                        $(this).fadeOut('2500', function(){
+                            $('button').prop('disabled', false).html("Enviar");
+                        })
+                    
+                })
+
+            })
+        }
 
     });
 

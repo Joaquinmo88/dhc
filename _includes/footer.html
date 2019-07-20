@@ -6,27 +6,25 @@
                     <div class="logo">
                         <a href="#"> <img src="../assets/images/logo-text.png" style="max-width: 200px" alt="DHC"> </a>
                     </div>
-                    
+
                 </div>
                 <div class="col-sm-3">
                     <h5>Casos de éxito</h5>
                     <ul>
-                        {% for storie in site.posts limit: 3%}
-                        {% if storie.categorie == "storie" %}
-                        <li><a href="{{ storie.url }}">{{ storie.title }}</a></li>
-                        {% endif %}
+                        {% for post in site.posts limit: 5%}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5>Blog</h5>
+                    <!-- <h5>Blog</h5>
                     <ul>
                         {% for storie in site.posts limit: 3 %}
                         {% if storie.categorie == "blog" %}
                         <li><a href="{{ storie.url }}">{{ storie.title }}</a></li>
                         {% endif %}
                         {% endfor %}
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-sm-3">
                     <div class="social-networks">
