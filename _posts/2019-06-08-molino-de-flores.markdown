@@ -1,6 +1,6 @@
 ---
 layout: detail_caso_exito
-permalink: /molino-de-flores
+permalink: /molino-de-flores/
 image: molino-de-las-flores.jpg
 title: "Molino de Flores"
 description: "El Parque Nacional Molino de Flores, ubicado en el municipio de Texcoco, fue escenario de grandes hechos históricos que abarcan desde los tiempos de Nezahualcóyotl..."
@@ -32,8 +32,8 @@ description: "El Parque Nacional Molino de Flores, ubicado en el municipio de Te
         </div>
         <div id="gallery" class="container-gallery">
             {% for i in (1..33) %}
-            <img alt="Image 1 Title" src="/assets/images/gallerys/molino/thumbnail/{{i}}.jpg"
-            data-image="/assets/images/gallerys/molino/{{i}}.jpg" data-description="Image 1 Description">
+            <img alt="{{page.title}}" src="/assets/images/gallerys/molino/thumbnail/{{i}}.jpg"
+            data-image="/assets/images/gallerys/molino/{{i}}.jpg" data-description="{{page.title}}">
             {% endfor %}
         </div>
         
