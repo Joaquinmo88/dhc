@@ -10,8 +10,8 @@ layout: home
 <section class="p-0">
 	<div class="container content-increment-number">
 		<div class="row">
-			<div class="col-6 col-md-6 col-lg-3">
-				<div class="d-flex">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="d-flex p-2">
 					<div class="d-flex justify-content-center align-items-center p-3">
 						<i class="fal fa-landmark fa-3x"></i>
 					</div>
@@ -21,8 +21,8 @@ layout: home
 					</div>
 				</div>
 			</div>
-			<div class="col-6 col-md-6 col-lg-3">
-				<div class="d-flex">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="d-flex p-2">
 					<div class="d-flex justify-content-center align-items-center p-3">
 						<i class="fal fa-vihara fa-3x"></i>
 					</div>
@@ -32,8 +32,8 @@ layout: home
 					</div>
 				</div>
 			</div>
-			<div class="col-6 col-md-6 col-lg-3">
-				<div class="d-flex">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="d-flex p-2">
 					<div class="d-flex justify-content-center align-items-center p-3">
 						<i class="fal fa-landmark fa-3x"></i>
 					</div>
@@ -43,8 +43,8 @@ layout: home
 					</div>
 				</div>
 			</div>
-			<div class="col-6 col-md-6 col-lg-3">
-				<div class="d-flex">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="d-flex p-2">
 					<div class="d-flex justify-content-center align-items-center p-3">
 						<i class="fal fa-vihara fa-3x"></i>
 					</div>
@@ -108,7 +108,7 @@ layout: home
 		</div>
 		<div class="row">
 			{% for post in site.posts limit: 6%}
-			<div class="col-6 col-md-6 col-lg-4 mb-4">
+			<div class="col-12 col-md-6 col-lg-4 mb-4">
 				<div class="last-dhc-projects">
 					<div class="position-relative">
 						<img src="/assets/images/casos_de_exito/{{post.image}}" class="img-fluid" />
@@ -188,7 +188,7 @@ layout: home
 	</div>
 </section>
 
-<section class="bg-white p-0">
+<section class="section-map p-0">
 
 	<div class="container position-relative">
 		<div class="container-target-map">
@@ -224,7 +224,7 @@ layout: home
 			</div>
 		</div>
 	</div>
-	<div id="map" style="height: 500px" class="w-100">
+	<div id="map" style="height: 500px" class="w-100 d-none d-sm-none d-md-none d-lg-block">
 	</div>
 
 </section>

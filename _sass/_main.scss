@@ -171,6 +171,9 @@ section {
 }
 
 // Maps
+.section-map {
+  background-color: white;
+}
 
 .container-contaco-map {
   widows: 100%;
@@ -533,7 +536,48 @@ footer {
   }
 }
 
+.separador-gallery {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2rem 0;
+  span {
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #2b83ee;
+    margin-top: -1px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section-map {
+    background-color: #3771c9;
+  }
+  .container-target-map {
+    height: auto !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+  .target-parallax {
+    background-size: 100% !important;
+    height: 500px !important;
+  }
   footer {
     text-align: center;
   }

@@ -32,6 +32,18 @@
             $("#gallery").unitegallery();
         }
 
+        if ($("#gallery-1").length > 0) {
+            $("#gallery-1").unitegallery();
+        }
+
+        if ($("#gallery-2").length > 0) {
+            $("#gallery-2").unitegallery();
+        }
+
+        if ($("#gallery-3").length > 0) {
+            $("#gallery-3").unitegallery();
+        }
+
         if ($(".increment-number").length > 0) {
             $(".increment-number").counterUp({
                 delay: 10,
