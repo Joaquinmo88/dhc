@@ -14,7 +14,7 @@ body {
 
 h1,
 h2 {
-  color: #2b83ee;
+  color: #3771c9;
   margin-bottom: 1.5rem;
 }
 
@@ -46,7 +46,7 @@ h2.title {
 }
 
 .text-inportant-resalt {
-  color: #2b83ee;
+  color: #3771c9;
   font-weight: 400;
   font-size: 19px;
   text-align: center;
@@ -66,7 +66,7 @@ h2.title {
   padding: 1rem 0;
   .increment-number {
     font-size: 28px;
-    color: #2b83ee;
+    color: #3771c9;
     font-weight: 900;
     font-family: "museo_sans500" !important;
   }
@@ -119,7 +119,7 @@ section {
     height: 75px;
     width: 75px;
     border-radius: 6px;
-    border: 1px solid #2b83ee;
+    border: 1px solid #3771c9;
     background-color: #3771c9;
     color: #ffffff;
     box-shadow: 0 20px 60px 0 rgb(0, 61, 136);
@@ -198,7 +198,7 @@ section {
   top: 0;
   left: 0;
   height: 500px;
-  width: 350px;
+  width: 410px;
   background-color: #3771c9;
   z-index: 2;
   padding: 50px 40px;
@@ -346,10 +346,10 @@ footer {
 //  Parallax
 
 .target-parallax {
-  background-image: url("/assets/images/page-image.svg");
+  background-image: url("/assets/images/page-image.png");
   background-position: bottom left;
   background-repeat: no-repeat;
-  background-size: 75%;
+  background-size: 100%;
   background-color: #ffffff;
   height: 800px;
   max-height: 800px;
@@ -493,7 +493,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   border-radius: 3px !important;
-  border-color: #2b83ee;
+  border-color: #3771c9;
 }
 
 // Separador
@@ -518,7 +518,7 @@ footer {
     position: absolute;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid #2b83ee;
+    border-top: 15px solid #3771c9;
     bottom: -15px;
     left: 1rem;
   }
@@ -557,7 +557,7 @@ footer {
     top: 50%;
     left: 0;
     width: 100%;
-    border-top: 2px solid #2b83ee;
+    border-top: 2px solid #3771c9;
     margin-top: -1px;
   }
 }
